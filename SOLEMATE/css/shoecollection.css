@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR OPEN */
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding: 20px 40px;
+    justify-content: space-between ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: white;
+}
+
+header img {
+    height: 50px;
+    width: 300px;
+    object-fit: cover;
+    position: relative;
+    left: 100px;
+    top: -10px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 15px;
+    position: relative;
+    top: -45px;
+    left: 300px;
+    border-radius: 18px;
+    transition: 0.2s;
+    margin-bottom: 0px;
+}
+
+header ul li.active a {
+    text-decoration: underline 3px solid #0096C7 ;
+    color: #000; /* Optionally change color to make it stand out */
+}
+
+
+
+header ul li a:hover {
+    text-decoration: underline 3px #0096C7;
+}
+
+/* NAVIGATION BAR CLOSE */
+
+/* GREETING START */
+
+.greeting-men {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjusted to occupy remaining viewport height */
+    z-index: 1; /* Ensure greeting content stays in front */
+}
+
+.greeting-men .greeting-content-men {
+    text-align: center;
+}
+
+.greeting-men .greeting-content-men h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 20px; /* Add margin for separation */
+    text-decoration: underline 5px #0096C7;
+}
+
+.greeting-men .greeting-content-men p {
+    font-size: 20px;
+    
+    margin-bottom: 20px; /* Add margin for separation */
+}
+
+.search-bar-container {
+    position: relative;
+    left: 26%;
+    top: -30px;
+}
+
+.search-bar-container input {
+    width: 48%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+/* GREETING CLOSE */
+
+/* GREETING START */
+
+.greeting-women {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjusted to occupy remaining viewport height */
+    z-index: 1; /* Ensure greeting content stays in front */
+}
+
+.greeting-women .greeting-content-women {
+    text-align: center;
+}
+
+.greeting-women .greeting-content-women h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 20px; /* Add margin for separation */
+    text-decoration: underline 5px #FF9999;
+}
+
+.greeting-women .greeting-content-women p {
+    font-size: 20px;
+    
+    margin-bottom: 20px; /* Add margin for separation */
+}
+
+/* GREETING CLOSE */
+
+/* PRODUCTS START */
+.section-container {
+    padding: 10px 5%;
+    background-color: ghostwhite;
+    position: relative;
+   
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Adjusted for 4 columns */
+    gap: 20px; /* Added gap between columns */
+}
+
+.products .card {
+    width: 100%; /* Adjusted width to fill the grid cell */
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.products .card img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    color: black;
+}
+
+.products .card .title {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 2px solid #0096C7;
+}
+
+.products .card .box .btn {
+    font-size: 13px;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 900;
+    background-color: black;
+    border-radius: 12px;
+    transition: 0.6s;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* PRODUCTS CLOSE */
+
+/* FOOTER OPEN */
+footer {
+    height: 170px;
+    width: 100%;
+    background-color: black ;
+    position: relative;
+    top: 20px;
+}
+
+footer .header {
+    color: #0096C7;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 615px;
+    font-size: 18px;
+    top: 40px;
+}
+
+footer .bottom-header {
+    color: #0096C7;
+    position: relative;
+    left: 670px;
+    font-size: 18px;
+    top: 80px;
+    font-weight: bold;
+    
+}
+
+footer img {
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+}
+
+footer ul li a {
+    color: #0096C7;
+    padding: 12px 20px;
+    font-size: 18px;
+    position: relative;
+    top: 85px;
+}
+/* FOOTER CLOSE */
